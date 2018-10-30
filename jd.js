@@ -1,8 +1,12 @@
 //使用说明。首先登陆京东账号 ，需要登陆  https://paipai.jd.com/auction-list/
 //进入chrome控制台，按f12，或者网页上右键-检查
 //首先把下面这两个复制到chrome控制台。按回车
+
+
 ;(function(d,s){d.body.appendChild(s=d.createElement('script')).src='https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js'})(document);
 ;(function(d,s){d.body.appendChild(s=d.createElement('script')).src='https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.js'})(document);
+
+
 
 //使用说明。首先登陆京东账号 ，需要登陆  https://paipai.jd.com/auction-list/
 //小白如何进入chrome控制台，按f12，或者网页上右键-检查
@@ -14,6 +18,10 @@
 // 如果最后时刻别人出价220，程序不会进行出价。如果别人出价170，程序会出价171。
 // 全自动的，不需要人守着浏览器。
 //只测试了chrome，其他的不清楚。
+
+
+
+
 axios.defaults.withCredentials = true;
 var getMoney=0;
 var auctionInfoId=window.location.pathname.split("/")[2];
