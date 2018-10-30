@@ -41,50 +41,6 @@ function sentMoney(money){
     }); 
     
   }
-// function setTimeTask(time,money) {
-// 	var msTime=time*1000;
-// 	var now=0;
-//     function countDown() {
-//     	now=now+50;
-//     	console.log('=========now========'+now/1000);
-//         msTime=msTime-50;
-//         if (msTime < 900) {
-//         	if (null!=money&&money>getMoney) {
-//         		sentMoney(getMoney+1);
-//         		console.log('请刷新页面查看获拍结果，有可能失败');
-//         	}else if(money<getMoney){
-//         		console.log('超出预期价格，失败');
-//         	}
-//             clearInterval(timer);
-//         }if(msTime < 1600){
-//         	$.ajax({
-//                 async : true,
-//                 url : "//used-api.jd.com/auctionRecord/getCurrentAndOfferNum",
-//                 type : "GET",
-//                 dataType : "jsonp", // 返回的数据类型，设置为JSONP方式
-//                 jsonp : 'callback', //指定一个查询参数名称来覆盖默认的 jsonp 回调参数名 callback
-//                 jsonpCallback: '__jp53', //设置回调函数名
-//                 data : {
-//                     auctionId : window.location.pathname.split("/")[2]
-//                 }, 
-//                 success: function(response, status, xhr){
-//                 	getMoney=response.data.currentPrice;
-//                     console.log("======获取到数据======"+getMoney+"======time="+msTime/1000);
-//                 }
-//             });
-//         }
-//     }
-//     timer = setInterval(countDown, 50);
-// }
-
-// function jdAuction(money){
-//   var a = document.getElementById("J-count-down");
-//   var time=parseInt(a.childNodes[0].innerHTML*60*60)+parseInt(a.childNodes[4].innerHTML*60)+parseInt(a.childNodes[8].innerHTML)
-//   console.log("========remain=========="+time);
-//   setTimeTask(time,money);
-// }
-
-
 
 function getRemainTime() {
         	$.ajax({
