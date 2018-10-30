@@ -105,4 +105,4 @@ function setTimeTask2(money) {
 }
 
 
-
+setTimeTask2()
